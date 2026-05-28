@@ -1,3 +1,6 @@
+/** Set to true once screenshots are in public/projects/ (e.g. cv-online.webp). */
+export const SHOW_PROJECT_IMAGES = false;
+
 export const proyectsPageInfo = [
   {
     info: {

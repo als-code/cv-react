@@ -1,6 +1,6 @@
 import { ProjectCard } from "../components/ProjectCard";
 import React from "react";
-import { proyects, proyectsPageInfo } from "../data/projects";
+import { proyects, proyectsPageInfo, SHOW_PROJECT_IMAGES } from "../data/projects";
 import { useLanguage } from "../LanguageContext";
 
 function Projects(){
@@ -34,7 +34,7 @@ function Projects(){
                             title={project.title[language]}
                             stack={project.stack[language]}
                             description={project.description[language]}
-                            image={project.image}
+                            image={SHOW_PROJECT_IMAGES ? project.image : undefined}
                             challenges={project.challenges?.[language]}
                             url={project.url}
                         />
