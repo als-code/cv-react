@@ -12,7 +12,7 @@ CV online desarrollado con **React + Vite**. La idea es tener un sitio ligero, r
 
 ## 🚀 Demo en Vivo
 
-Puedes consultar el resultado en este enlace: 
+Puedes consultar el resultado en este enlace: https://als-code.github.io/cv-react/ 
 
 ## ✨ Características
 
