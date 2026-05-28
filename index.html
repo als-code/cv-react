@@ -9,6 +9,25 @@
     <link rel="stylesheet" crossorigin href="/cv-react/assets/index-j4zGmId7.css">
   </head>
   <body>
+    <script>
+      // Decode GitHub Pages SPA redirect (see public/404.html)
+      ;(function (location) {
+        if (location.search[1] === '/') {
+          var decoded = location.search
+            .slice(1)
+            .split('&')
+            .map(function (segment) {
+              return segment.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(
+            null,
+            null,
+            location.pathname.slice(0, -1) + decoded + location.hash
+          )
+        }
+      })(window.location)
+    </script>
     <div id="root"></div>
   </body>
 </html>
