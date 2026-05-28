@@ -1,0 +1,7 @@
+/* Archivo principal de estilos */
+@import "./styles/variables.css";
+@import "./styles/layout.css";
+@import "./styles/sidebar.css";
+@import "./styles/hero.css";
+@import "./styles/resume.css";
+@import "./styles/forms.css";

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* ---------- Variables globales ---------- */
+:root {
+  --primary: #ffb400;
+  --primary-soft: rgba(255, 180, 0, 0.12);
+
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 14px 40px rgba(15, 23, 42, 0.2);
+
+  --font-sans: 'Quicksand', system-ui, -apple-system, sans-serif;
+}
+
+/* Tema Claro */
+body.theme-light {
+  --bg-body: #f3f4f6;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-soft: #f7f7fb;
+  --bg-pill: #e5e7eb;
+  --border-color: rgba(15, 23, 42, 0.1);
+
+  --accent: #111827;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --text-invert: #f9fafb;
+  --text-dark: #050509;
+}
+
+/* Tema Oscuro */
+body.theme-dark {
+  --bg-body: #050509;
+  --bg-sidebar: #0d0d16;
+  --bg-card: #111827;
+  --bg-card-soft: #1e293b;
+  --bg-pill: #0f1018;
+  --border-color: rgba(255, 255, 255, 0.1);
+
+  --accent: #ffb400;
+  --text-main: #ffffff;
+  --text-muted: #d1d5db;
+  --text-invert: #111827;
+  --text-dark: #ffffff;
+
+  --overlay-gradient: linear-gradient(rgba(5, 5, 9, 0.85), rgba(0, 255, 89, 0.75));
+  --shadow-card: 0 14px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Reset básico ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  /* Ajustamos la ruta ya que ahora estamos dentro de /styles/ */
+  background-image: url('../assets/backgorund.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+}
