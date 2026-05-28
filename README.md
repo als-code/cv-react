@@ -6,6 +6,10 @@ CV online desarrollado con **React + Vite**. La idea es tener un sitio ligero, r
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
 
+## 📫 Contacto
+
+- LinkedIn: https://www.linkedin.com/in/alejandro-lasierra/
+
 ## 🚀 Demo en Vivo
 
 Puedes consultar el resultado en este enlace: 
@@ -75,14 +79,3 @@ Si quieres ejecutar este proyecto localmente, sigue estos pasos:
 - Los **datos del CV** se sirven actualmente desde `src/data/` (ficheros JS con la información de experiencia, formación, proyectos, etc.).  
   **Mejora futura**: mover esa fuente de datos a **PostgreSQL** para mantener el CV (React) sincronizado con la web de **portfolio** (aún en desarrollo) usando un único origen de datos.
 
-## 📦 Despliegue
-
-Para generar la versión de producción optimizada:
-```bash
-npm run build
-```
-El contenido de la carpeta `dist/` es el que debe subirse al servicio de hosting.
-
-## 📫 Contacto
-
-- LinkedIn: https://www.linkedin.com/in/alejandro-lasierra/
