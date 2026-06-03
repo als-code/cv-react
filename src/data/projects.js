@@ -14,12 +14,12 @@ export const proyects = [
     title: {
       es: 'Web Seguimiento Videojuegos Retro',
       en: 'Web Tracking Retro Games',
-    },
+    }, 
     stack: {
       es: 'React, Javascript, TailwindCSS, Node.js, Express, PostgreSQL, Docker, Ubuntu Server',
       en: 'React, Javascript, TailwindCSS, Node.js, Express, PostgreSQL, Docker, Ubuntu Server',
     },
-    image: '/projects/tracking-web.webp',
+    image: '/projects/savestate.webp',
     url: 'https://github.com/als-code/savestate',
     description: {
       es: 'Una web que permite llevar un seguimiento de los videojuegos retro que has jugado, tienes en propiedad y calificarlos.',
