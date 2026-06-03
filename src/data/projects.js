@@ -12,6 +12,26 @@ export const proyectsPageInfo = [
 export const proyects = [
   {
     title: {
+      es: 'Web Seguimiento Videojuegos Retro',
+      en: 'Web Tracking Retro Games',
+    },
+    stack: {
+      es: 'React, Javascript, TailwindCSS, Node.js, Express, PostgreSQL, Docker, Ubuntu Server',
+      en: 'React, Javascript, TailwindCSS, Node.js, Express, PostgreSQL, Docker, Ubuntu Server',
+    },
+    image: '/projects/tracking-web.webp',
+    url: 'https://github.com/als-code/savestate',
+    description: {
+      es: 'Una web que permite llevar un seguimiento de los videojuegos retro que has jugado, tienes en propiedad y calificarlos.',
+      en: 'A webpage that allows you to track the retro games you have played, you have in property and qualify them.',
+    },
+    challenges: {
+      es: 'Sincronización en tiempo real con la base de datos PostgreSQL y manejo de estados globales para la actualización instantánea del backlog.',
+      en: 'Synchronization in real time with the PostgreSQL database and global state management for instant backlog updates.',
+    },
+  },
+  {
+    title: {
       es: 'CV Online',
       en: 'Online CV',
     }, 
@@ -20,7 +40,7 @@ export const proyects = [
       en: 'React, Vite, CSS',
     },
     image: '/projects/cv-online.webp',
-    url: 'https://github.com/als-code',
+    url: 'https://github.com/als-code/cv-react',
     description: {
       es: 'Mi CV online. Página WEB SPA (Single Page Application). Empleo de tecnologías modernas como React y Vite, hosting en GitHub Pages.',
       en: 'My online CV. Single Page Application (SPA) WEB page. Use of modern technologies such as React and Vite, hosting on GitHub Pages.',
@@ -32,22 +52,22 @@ export const proyects = [
   },
   {
     title: {
-      es: 'Página WEB de portfolio de desarrollador',
-      en: 'Developer portfolio web page',
+      es: 'Página WEB de portfolio de artistas',
+      en: 'Artists portfolio web page',
     }, 
     stack: {
-      es: 'React, Vite, CSS',
-      en: 'React, Vite, CSS',
+      es: 'React, Vite, TailwindCSS',
+      en: 'React, Vite, TailwindCSS',
     },
     image: '/projects/portfolio-web.webp',
     url: 'https://github.com/als-code',
     description: {
-      es: 'Página web tipo onepage con información de mis proyectos y contacto.(En desarrollo)',
-      en: 'Onepage web page with information about my projects and contact.(In development)',
+      es: 'Página web tipo onepage con proyectos y trabajos realizados.',
+      en: 'Webpage type onepage with projects and works done.',
     },
     challenges: {
-      es: 'Implementación de Next.js y una api Node.js, con conexión a una base de datos PostgreSQL dockerizada',
-      en: 'Implementation of Next.js and a Node.js api, with connection to a dockerized PostgreSQL database',
+      es: 'Plantilla de portfolio en React + Vite + Tailwind con datos en JSON y temas intercambiables. Galería con filtros, lightbox y UI responsive; fondo en degradado con variables CSS.',
+      en: 'Portfolio template in React + Vite + Tailwind with data in JSON and interchangeable themes. Gallery with filters, lightbox and responsive UI; background in gradient with CSS variables.',
     },
   },
     {
@@ -70,25 +90,6 @@ export const proyects = [
       en: 'Efficient camera integration and real-time image processing for accurate color detection.',
     },
   },
-    {
-    title: {
-      es: 'Web Seguimiento de libros y backlog de juegos (En desarrollo)',
-      en: 'Web Tracking of books and backlog of games (In development)',
-    },
-    stack: {
-      es: 'React, Javascript, CSS, Firebase, Firestore database, Bootstrap',
-      en: 'React, Javascript, CSS, Firebase, Firestore database, Bootstrap',
-    },
-    image: '/projects/tracking-web.webp',
-    url: 'https://github.com/als-code',
-    description: {
-      es: 'Una web que permite llevar un seguimiento de los libros y juegos que llevas este año.',
-      en: 'A web that allows you to track your books and games this year.',
-    },
-    challenges: {
-      es: 'Sincronización en tiempo real con Firebase Firestore y manejo de estados globales para la actualización instantánea del backlog.',
-      en: 'Real-time synchronization with Firebase Firestore and global state management for instant backlog updates.',
-    },
-  },
+  
 
 ]
