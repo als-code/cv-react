@@ -1,81 +1,41 @@
-# CV Online - Portfolio Personal
+# React CV Portfolio
 
-CV online desarrollado con **React + Vite**. La idea es tener un sitio ligero, rápido y fácil de mantener donde presentar experiencia, formación y proyectos con una navegación clara.
+A lightweight, high-performance digital curriculum vitae and professional portfolio built with **React** and **Vite**, designed for seamless maintenance and clear user navigation.
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
 
-## 📫 Contacto
+## 🔗 Links & Contact
 
-- LinkedIn: https://www.linkedin.com/in/alejandro-lasierra/
+- **Live Demo:** [als-code.github.io/cv-react/](https://als-code.github.io/cv-react/)
+- **LinkedIn:** [linkedin.com/in/alejandro-lasierra/](https://www.linkedin.com/in/alejandro-lasierra/)
 
-## 🚀 Demo en Vivo
+## ✨ Key Features
 
-Puedes consultar el resultado en este enlace: https://als-code.github.io/cv-react/ 
+- **Single Page Application (SPA):** Implements fluid, refresh-free navigation powered by `react-router-dom`.
+- **Modular Architecture:** Structured with a strict separation of concerns across `pages/`, `components/`, and `layouts/`.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewports using modern CSS.
+- **Persistent State:** User preferences for color themes (light/dark) and language selection are managed via Context API and persisted using `localStorage`.
 
-## ✨ Características
+## 🛠️ Tech Stack & Architecture
 
-- **SPA (Single Page Application):** Navegación fluida y sin recargas de página gracias a `react-router-dom`.
-- **Arquitectura simple y mantenible:** separación por `pages/`, `components/` y `layouts/`.
-- **Diseño Responsivo:** Adaptado para dispositivos móviles, tablets y escritorio.
-- **Preferencias persistentes:** tema (claro/oscuro) e idioma se guardan en `localStorage`.
-- **Secciones Detalladas:**
-  - **Resumen:** Vista principal con experiencia y educación.
-  - **Sobre mí:** Información personal y biografía.
-  - **Proyectos:** Galería de trabajos realizados.
-  - **Contacto:** Formulario con validación y página de confirmación. (Omitida hasta tener backend.)
+- **Core:** React 19, Vite (Build Tool), React Router v7.
+- **State Management:** Decoupled `ThemeContext` and `LanguageContext` to prevent prop drilling and centralize persistence logic.
+- **Data Layer:** Static CV records are temporarily managed via structured JS files within `src/data/`.
+- **Future Roadmap:** Migration of the data layer to a centralized **PostgreSQL** database to synchronize data across multiple portfolio frontends.
 
-## 🛠️ Tecnologías Utilizadas
+## ⚙️ Installation & Setup
 
-- **React 19** - Librería principal.
-- **Vite** - Herramienta de construcción (build tool) ultra rápida.
-- **React Router v7** - Gestión de rutas y navegación.
-- **CSS Moderno** - Estilos personalizados y diseño responsivo.
+Execute the following commands to configure the local development environment:
 
-## 📂 Estructura del Proyecto
+```bash
+# Clone the repository
+git clone [https://github.com/als-code/cv-react.git](https://github.com/als-code/cv-react.git)
+cd cv-react
 
-```text
-src/
- ├── components/     # Componentes pequeños y reutilizables
- ├── layouts/        # Estructura base (MainLayout con Outlet)
- ├── pages/          # Vistas principales (Home, About, Projects, etc.)
- ├── data/           # Datos del CV (experiencia, proyectos, skills...)
- ├── hooks/          # Hooks de la app (tema)
- ├── App.jsx         # Configuración de rutas
- └── main.jsx        # Punto de entrada de la aplicación
-```
+# Install dependencies
+npm install
 
-## ⚙️ Instalación y Configuración
-
-Si quieres ejecutar este proyecto localmente, sigue estos pasos:
-
-1. **Clona el repositorio:**
-   ```bash
-   git clone https://github.com/als-code/cv-react.git
-   ```
-
-2. **Entra en la carpeta del proyecto:**
-   ```bash
-   cd cv-react
-   ```
-
-3. **Instala las dependencias:**
-   ```bash
-   npm install
-   ```
-
-4. **Inicia el servidor de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-
-5. Abre http://localhost:5173 en tu navegador.
-
-## 🧭 Decisiones de implementación (breve)
-
-- El **tema** se gestiona con un `ThemeContext` para evitar prop drilling y mantener la lógica de persistencia en un único sitio.
-- El **idioma** se gestiona con un `LanguageContext` (ES/EN) y se persiste para respetar la preferencia del usuario.
-- Los **datos del CV** se sirven actualmente desde `src/data/` (ficheros JS con la información de experiencia, formación, proyectos, etc.).  
-  **Mejora futura**: mover esa fuente de datos a **PostgreSQL** para mantener el CV (React) sincronizado con la web de **portfolio** (aún en desarrollo) usando un único origen de datos.
-
+# Start the development server
+npm run dev
