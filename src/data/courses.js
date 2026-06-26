@@ -42,7 +42,39 @@ export const devCourses = [
     },
     extra: '2025',
   },
-
+  {
+    title: {
+      es: 'Google AI',
+      en: 'Google AI',
+    },
+    center: {
+      es: 'Coursera Google Certificación',
+      en: 'Coursera Google Certification',
+    },
+    extra: '2026',
+  },
+  {
+    title: {
+      es: 'IA para Análisis de Datos',
+      en: 'AI for Data Analysis',
+    },
+    center: {
+      es: 'Coursera Google Certificación',
+      en: 'Coursera Google Certification',
+    },
+    extra: '2026',
+  },
+  {
+    title: {
+      es: 'IA para Desarrollo de Aplicaciones',
+      en: 'AI for App Building',
+    },
+    center: {
+      es: 'Coursera Google Certificación',
+      en: 'Coursera Google Certification',
+    },
+    extra: '2026',
+  },
   {
     title: {
       es: 'Crea tu Equipo IA para emprender',
