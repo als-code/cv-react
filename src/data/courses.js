@@ -11,8 +11,19 @@ export const devCourses = [
 
   {
     title: {
-      es: 'Javascript Moderno',
-      en: 'Modern Javascript',
+      es: 'Dart de cero hasta los detalles (Cursando Actualmente)',
+      en: 'Dart: From Scratch to the Details (Currently Taking)',
+    },
+    center: {
+      es: 'Udemy',
+      en: 'Udemy',
+    },
+    extra: '2026',
+  },
+  {
+    title: {
+      es: 'Javascript Moderno (Cursando Actualmente)',
+      en: 'Modern Javascript (Currently Taking)',
     },
     center: {
       es: 'DevTalles',
